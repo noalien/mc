@@ -1,0 +1,18 @@
+to koch :size
+  penup
+  if :size < 4 [pendown forward :size stop]
+  koch :size/3
+  left 60 koch :size/3
+  right 120 koch :size/3
+  left 60 koch :size/3
+end
+home
+clearscreen
+penup
+forward 350
+right 150
+koch 500
+right 120
+koch 500
+right 120
+koch 500
